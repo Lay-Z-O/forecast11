@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Information-section</title>
+        <link rel="stylesheet" href="{% static 'css/information.css' %}" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="{% static 'img/logo.png' %}" alt="logo" width="50px" height="50px">
+                <h5 class="brand"> <span>Copra Price Forecasting</span></h5>
+                <span class="material-icons">menu</span>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="menu-styling">
+                    <li><a href="{% url 'overview' %}">
+                            <span class="material-icons">dashboard</span>
+                            <span>Overview</span>
+                        </a></li>
+                    <li><a href="{% url 'forecast' %}">
+                            <span class="material-icons">query_stats</span>
+                            <span>Forecast</span>
+                        </a></li>
+                    <li class="active"><a href="{% url 'info' %}">
+                            <span class="material-icons">info</span>
+                            <span>Information</span>
+                        </a></li>
+                    <div class="menu-bottom">
+                    <li><a href="{% url 'profile' %}">
+                            <span class="material-icons">person</span>
+                            <span>Profile</span>
+                        </a></li>
+                    <li><a href="{% url 'logout' %}">
+                            <span class="material-icons">logout</span>
+                            <span>Logout</span>
+                        </a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <header>
+                <div class="notif">
+                    <i class="fa-solid fa-bell"></i>
+                    <img  class="profile" src="{% static 'img/profile.png' %}" alt="profile">
+                </div>
+            </header>
+
+            <section>
+
+                <div class="container">
+                    <div class="bg-photo">
+                        <img src="{% static 'img/bg-photo.jpg' %}" alt="bg-photo">
+                    </div>
+
+                <div class="content">
+                    <img src="{% static 'img/logo.png' %}" alt="logo" width="50px" height="50px">
+                    <div class="text-image">
+                        <span>Welcome to <br> Copra <br> Price Forecasting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-desc">
+                <p>At COPRA Price Forecast, we are passionate <br> about providing about acccurate and reliable forecasts <br> for cococnut copra prices, Our mission is to <br>
+                empower farmers, traders, and businesses in the <br> cococnut industry with the insights they need to <br> make informed decisions in a market that is often <br>
+                influenced by various factors. </p>
+            </div>
+
+            <div class="middle-section">
+                <div class="middle-section-content">
+                    <h2>What we do</h2>
+                    <p>Providing higly accurate price forecasts <br> Deliver cococnut copra related news <br> Update coconut latest market trends</p>
+                </div>
+    
+            </div>
+                
+            </section>
+
+            <footer>
+                <div class="top-desc">
+                    <div class="newsletter-section">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter to get<br>
+                        your daily doe of news, updates, <br>
+                        1and special offers</p>
+                        <div class="button">
+                            <button><i class="fa-regular fa-envelope"></i></button>
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="quick-links-section">
+                        <h4>Quick Links</h4>
+                        <ul class="links-section">
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">Forecast</a></li>
+                            <li><a href="">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="third-section">
+                        <h4>Get in Touch</h4>
+                        <div class="desc1">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <p>Western Mindanao <br> State University, <br>Zamboanga City</p>
+                        </div>
+                        <div class="phone-section">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>(63+) 993 826  7408</p>
+                        </div>
+                        <div class="icons-section">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            
+        </div>
+        
+            
+    </body>
+</html>

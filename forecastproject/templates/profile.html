@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css'%}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="{% static 'img/logo.png' %}" alt="logo" width="50px" height="50px" />
+        <h5 class="brand"><span>Copra Price Forecasting</span></h5>
+        <span class="material-icons">menu</span>
+      </div>
+      <div class="sidebar-menu">
+        <ul class="menu-styling">
+          <li>
+            <a href="{% url 'overview' %}">
+              <span class="material-icons">dashboard</span>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'forecast' %}">
+              <span class="material-icons">query_stats</span>
+              <span>Forecast</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'info' %}">
+              <span class="material-icons">info</span>
+              <span>Information</span>
+            </a>
+          </li>
+          <div class="menu-bottom">
+            <li class="active">
+              <a href="{% url 'profile' %}">
+                <span class="material-icons">person</span>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'logout' %}">
+                <span class="material-icons">logout</span>
+                <span>Logout</span>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <div class="notif">
+          <i class="fa-solid fa-bell"></i>
+          <img class="profile" src="{% static 'img/profile.png' %}" alt="profile" />
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+          <div class="photo">
+            <img src="{% static 'img/profile.png' %}" alt="profile" />
+            <h2>Kopiko Brown</h2>
+          </div>
+
+          <form action="">
+            <span class="text-header">Personal Information</span>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">First Name</span>
+                <input type="text" placeholder="First Name" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Middle Name</span>
+                <input type="text" placeholder="Middle Name" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Last Name</span>
+                <input type="text" placeholder="Last Name" required />
+              </div>
+            </div>
+
+            <span class="text-header">Contact Information</span>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Phone Number" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Email Address</span>
+                <input type="text" placeholder="Email" required />
+              </div>
+            </div>
+
+            <div class="user-details">
+              <div class="birthdate">
+                <div class="input-box">
+                  <span class="details">Birthday</span>
+                  <input type="date" required />
+                </div>
+                <div class="gender-box">
+                    <h4>Gender</h4>
+                    <div class="gender-option">
+                      <div class="gender">
+                        <input type="radio" id="check" name="gender" />
+                        <label for="check">Male</label>
+                      </div>
+                      <div class="gender">
+                        <input type="radio" id="check" name="gender" />
+                        <label for="check">Female</label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            
+          </form>
+
+          <div class="button">
+            <input type="submit" value="Submit"/>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

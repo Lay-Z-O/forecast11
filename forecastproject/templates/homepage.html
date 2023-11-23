@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div class="logo">
+          <img src="{% static 'img/logo.png' %}" alt="logo" />
+          <div class="logo-name">
+            <span class="logo-desc">Copra</span>
+            <span class="logo-desc-sub">Price Forecasting</span>
+          </div>
+        </div>
+        <div>
+          <img src="{% static 'img/user-icon.png' %}" alt="user-icon" class="user-pic"
+            onclick="toggleMenu()" />
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <a href="{% url 'login' %}" class="sub-menu-link">Sign-in</a>
+            <a href="{% url 'signup' %}" class="sub-menu-link">Sign-up</a>
+
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="content">
+      <div class="desc">
+        <h2>Unlock the Power of Precision: <br> Predict Coconut Copra Prices
+          with Us!</h2>
+        <p>Welcome to your trusted source for coconut copra price predictions.
+          If you're looking for insights that <br> can help you make informed
+          decisions, you're in the right palce</p>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+      let subMenu = document.getElementById("subMenu");
+
+      function toggleMenu(){
+          subMenu.classList.toggle("open-menu");
+      }
+  </script>
+
+  <script src="{% static 'js/swiper.js' %}"></script>
+
+  </body>
+
+</html>

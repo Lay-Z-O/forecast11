@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.messages .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for the success messages */
+.messages .success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for the info messages */
+.messages .info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for the warning messages */
+.messages .warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

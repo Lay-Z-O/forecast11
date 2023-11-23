@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgb(53, 143, 79);
+  color: #fff;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%),
+    0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0rem 1rem;
+}
+.sidebar-menu {
+  padding: 1.5rem;
+}
+.sidebar-menu ul li a:hover {
+  padding: 12px 20px;
+  color: #333;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.sidebar-menu ul li.active > a {
+  padding: 12px 20px;
+  color: #333;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.sidebar a span:last-child {
+  padding-left: 0.5rem;
+}
+.menu-bottom {
+  margin-top: 200%;
+}
+.sidebar ul li a span.material-icons {
+  position: relative;
+  margin-right: 5px;
+  top: 5px;
+  margin-left: 10px;
+}
+.main-content {
+  position: relative;
+  margin-left: 240px;
+}
+header {
+  position: fixed;
+  height: 60px;
+  left: 240px;
+  top: 0;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ccc;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 95%;
+  min-height: 90vh;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.notif {
+  display: flex;
+  align-items: center;
+}
+.notif i,
+.notif div {
+  margin-right: 1.2rem;
+}
+.profile {
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 3rem;
+}
+
+.photo {
+  margin-top: 50px;
+  margin-right: 600px;
+}
+.photo img {
+  width: 100px;
+  height: 100px;
+}
+.container {
+  margin-right: 400px;
+}
+
+.container form {
+  position: relative;
+  bottom: 165px;
+  margin-left: 300px;
+}
+
+.container form input {
+  height: 25px;
+  padding-left: 10px;
+}
+.input-box input {
+  width: 200px;
+}
+
+form .user-details .input-box {
+  width: calc(100% / 2 - 20px);
+}
+.user-details {
+  padding-bottom: 25px;
+}
+
+form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.gender-box {
+  padding-top: 15px;
+}
+.birthdate {
+  position: absolute;
+  bottom: 225px;
+  left: 320px;
+}
+.button {
+  position: absolute;
+  bottom: 100px;
+  left: 800px;
+}
+
+.button input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px 30px;
+  background: rgb(65, 228, 65);
+}
+.text-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+.details {
+  font-size: 15px;
+  font-weight: 400;
+}
